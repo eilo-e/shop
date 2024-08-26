@@ -1,0 +1,46 @@
+body{
+    background-color: black
+ }
+h2{
+    color: rgb(0, 0, 0);     
+    display: inline-block;
+}
+h3{
+    color: rgb(55, 8, 165);
+    display: inline-block;
+
+}
+div{
+background-color: rgb(108, 70, 179);
+height: 50px;
+padding: 50px;
+width: 1300px;
+text-align: center;
+
+
+}
+.posts{
+    background-color:rgb(108, 70, 179);
+    margin: 50px;
+    margin-left: 350px;
+    padding: 50px;
+    width: 500px;
+    height: auto;
+    
+
+}
+.underline{
+    color: rgb(255, 0, 0);
+}
+a{
+    text-decoration: none;
+    color: blanchedalmond;
+    
+   
+}
+.blue{
+    color: cornflowerblue;
+}
+h1{
+    display: inline-block;
+}

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css"  href="/static/makeup/css/details.css">
+    <title>shop details</title>
+</head>
+<body>
+
+    
+   <ul>
+
+        <div>
+
+                <h3.1> <li> shope name : {{shopha.shopname}}</li></h3>
+                <h4.1> <li>shop location : {{shopha.location}}</li></h4> 
+
+              <div.b>
+
+                <h4.1> <li> shop phone number : {{shops.shopPhoneNumber}}</li></h4>
+                    <li><h1><a href="/posts/{{shopha.pk}}">posts</a></h1></li>
+
+              </div> 
+              <ul> {% for c in comments %}
+                <li> {{c.name}} , {{c.commenttext}} </li>
+                {% endfor %}
+                   <h3>
+                    <a href="/comments/comments"> انتقادات و پیشنهادات و نظرات شما:</a>
+                   </h3>
+
+                
+              </ul>
+        </div>
+   
+        </ul>
+
+</body>
+</html>

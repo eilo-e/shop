@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css"  href="/static/makeup/css/posts.css">
+    
+    <div> 
+             <h1><a href="/main/page">HOME</a></h1>      <h1><a href="/shops">SHOPS</a></h1>
+            <h2><menu> <a href="/skincare/posts"> SKINCARE</a> / <a href="/makeup/posts/"> MAKEUP</a>  </menu></h2>
+    </div>
+</head>
+<body>
+
+    
+
+    <ul>
+        {%for item in makeupposts%}
+            <div class="posts"> 
+                <h1>MAKEUP:</h1>
+                <li><h2>product name:</h2><h3>{{item.productname}}</h3></li>
+                <li><h2>price:</h2><h3>{{item.price}}</h3></li>
+                <li><h2>brand:</h2><h3>{{item.brandname}}</h3></li>
+                <li><h2>remained:</h2><h3>{{item.remained}}</h3></li>
+                <li><h2>expdate:</h2><h3>{{item.expdate}}</h3></li>
+                <li><h2>about this product:</h2><h3>{{item.aboutproduct}}</h3></li>
+            </div>
+        {%endfor%}
+    </ul>
+<h1 class="underline">------------------------------------------------------------------------------------------------------------------------------------</h1>
+    <ul>
+        {%for item in skincareposts%}
+            <div class="posts"> 
+                <h1>SKINCARE:</h1>
+                <li><h2>product name:</h2><h3>{{item.productname}}</h3></li>
+                <li><h2>price:</h2><h3>{{item.price}}</h3></li>
+                <li><h2>brand:</h2><h3>{{item.brandname}}</h3></li>
+                <li><h2>remained:</h2><h3>{{item.remained}}</h3></li>
+                <li><h2>expdate:</h2><h3>{{item.expdate}}</h3></li>
+                <li><h2>about this product:</h2><h3>{{item.aboutproduct}}</h3></li>
+            </div>
+        {%endfor%}
+    </ul>
+    <h1 class="underline">------------------------------------------------------------------------------------------------------------------------------------</h1>
+
+    <ul>
+        {%for item in digitalstufposts%}
+            <div class="posts">
+                <h1>DIGITALSTUF:</h1> 
+                <li><h2>product name:</h2><h3>{{item.productname}}</h3></li>
+                <li><h2>price:</h2><h3>{{item.price}}</h3></li>
+                <li><h2>brand:</h2><h3>{{item.brandname}}</h3></li>
+                <li><h2>remained:</h2><h3>{{item.remained}}</h3></li>
+                <li><h2>about this product:</h2><h3>{{item.aboutproduct}}</h3></li>
+            </div>
+        {%endfor%}
+    </ul>
+</body>
+</html>
