@@ -71,6 +71,6 @@ def allposts(request):
     }
     return render(request, "makeup/allposts.html",context)
 
-##
+
 
 
